@@ -1,0 +1,280 @@
+.cuerpo_page{/* Vamos a quitar todo lo que no siver y poner un tipo de letra distinto*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+
+.fondoLogo{
+    background-color: #f6e9f9;
+}
+
+.logoInicial{
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+
+}
+
+/* !==========================AQUI COMIENZA EL HEADER======================================= */
+
+.header{  /* HEADER */
+    background: url(../assets/img/bg-header.jpg);
+    height: 600px;
+    display: flex;                   /* ! AYUDA A QUE SE FLEXIBLE TODA ESTA SECCION */
+    background-size: cover;             /* Trata de acomodar los elementos*/
+    align-items: center;                    /* ? ALINEANDO VERTICALMETE */
+    justify-content: center;                    /* ALINEANDO HORIZONTALMENTE */
+}
+
+.headerInfo{ /* CAJA DE TODO EL TEXTO INICIAL */
+    width: 700px;
+    text-align: center;     /* Centramos el texto interior de la caja principal del header*/
+}
+
+.marca{ /* ETIQUETA DEL TITULO */
+    font-size: 108px;
+    color: #fff;
+}
+
+.separador{
+    border-bottom: solid;
+    color: rgb(51, 156, 204);
+}
+
+.eslogan{
+    color: #fff;
+}
+
+.botonAction{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid rgb(51, 156, 204);
+    font-size: 20px;
+    padding: 15px 35px; /* Padding con ancho y alto */
+    border-radius: 5%;
+}
+
+/* !==========================AQUI TERMINA EL HEADER======================================= */
+
+/* ==========================SECCION SIMPLE DISEÑO=========================================*/
+
+.simpleDiseno{
+    background-color: #f6e9f9;
+    padding: 100px;
+}
+
+.contenedorSimpleDiseno{
+    max-width: 1100px;
+    text-align: center;
+    margin: auto;
+}
+
+p{
+    color: #aeaeae;
+}
+
+h2,h3{
+    font-size: 40px;
+    color: #383838;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.servicios{
+    width: 1100px;
+    padding: 100px;
+    margin: auto;
+    display: flex;
+}
+
+.contenedorServicios{
+    width: 33.33%;
+    margin: auto;
+    text-align: center;
+}
+
+.contenedorServicios img{
+    margin-bottom: 15px;
+}
+
+.contenedorServicios h5{
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #383838;
+}
+
+.contenedorServicios span{
+    font-size: 15px;
+    color: #aeaeae;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 0 20px;
+    display: block;
+}
+
+.contenedorServicios:hover{
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.contenedorServicios:hover img{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+/* ==========================SECCION SHOW CASE=========================================*/
+
+.contenedorShowCase{
+    background-color: aliceblue;
+}
+
+.showCase{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 0;
+}
+
+.encabeazadosShowCase{
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.fila{
+    display: flex;
+}
+
+.galeriaShowCase{
+    width: 33.33%;
+}
+
+.caja-galeria{
+    padding: 15px 15px;
+}
+
+/* ==========================SECCION STAY WITH US=========================================*/
+
+
+.stayWithUs{
+    background: url(../assets/img/bg-stay.jpg);
+    height: 700px;
+}
+
+.contenedorStay{
+    width: 1100px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.encabezadoStay h2{
+    text-align: center;
+    color: #fff;
+}
+
+.encabezadoStay{
+    text-align: center;
+    color: #ffffff70;
+    padding: 50px 0;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+}
+
+.input{
+    width: 50%;               
+    padding: 15px;
+    margin: auto; 
+    border: 1px solid #fff;    
+    background: transparent;   
+    color: #fff;              
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.input::placeholder{
+    color: rgba(255,255,255,0.8);
+}
+
+textarea.input{
+    min-height: 140px;
+    resize: vertical;
+}
+
+.acciones{
+    width: 50%;               /* misma anchura que los inputs */
+    margin: 8px auto 0 auto;  /* centrar y quedar justo debajo del form */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.check{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.check label{
+    color: #fff;
+    cursor: pointer;
+}
+
+.btnEnviar{
+    display: flex;
+    align-items: center;
+}
+
+/* ==========================FOOTER=========================================*/
+
+.footer{
+    background-color: #6e6b6b;
+    color: #aeaeae;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 20px;
+}
+
+.footer span{
+    color: #aeaeae;
+}
+
+
+.redes_sociales{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.redes_sociales a{
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.redes_sociales i{
+    display: block;
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.redes_sociales a:hover i,
+.redes_sociales a:focus i{
+    transform: scale(1.2);
+    filter: drop-shadow(0 6px 10px rgba(0,0,0,0.2));
+}
