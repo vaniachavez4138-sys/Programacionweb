@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.caja{
+    height: auto;
+    width: 450px;
+    background-color: lightblue;
+    border: 10px dashed red;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.parrafo{
+    font-size: 20px;
+    border: 10px solid green;
+    margin: 30px;
+    padding: 20px;
+}
+
+
+.spanPersonalizado{
+    border: 5px dotted purple;
+    background-color: lightseagreen;
+    display: block;
+}
+
+.parrafoPersonalizado{
+    border: 5px solid orange;
+    background-color: rgb(255, 0, 0);
+    display: inline;
+}
