@@ -1,0 +1,161 @@
+var numero = 10;
+console.log("El numero es" + numero);
+
+console.log("Hola Mundo");
+document.write("Hola Mundo en la pagina");
+
+console.error("mi error");
+console.warn("mi warning");
+
+var numero1 = 100;
+var numero2 = 10;
+
+console.log("La suma es" + " " + (numero1+numero2));
+console.log("La multiplicacion es" + " " + (numero1*numero2));
+console.log("La division es" + " " + (numero1/numero2));
+console.log("La modulo es" + " " + (numero1%numero2));
+
+var boolean = true;
+
+if( boolean == true){
+    console.log("Es verdadero");
+} else {
+    console.log("Es falso");
+}   
+
+var tipoTarjeta = "Credit Card";
+
+switch(tipoTarjeta){
+    case "Credit Card":
+        console.log("Tarjeta de credito");
+        break;
+    case "Debit Card":
+        console.log("Tarjeta de debito");
+        break;
+    case "Money":
+        console.log("Dinero en efectivo");
+        break;
+    default:
+        console.log("Otro metodo de pago");
+        break;
+}
+
+var nombres = ["Ana", "Luis", "Carlos", "Mariana"];
+
+for(var i = 0; i < nombres.length; i++){
+    console.log("Nombre:" + " " + nombres[i]);
+}
+
+console.table(nombres);
+
+nombres[2] = "Pedro";
+console.log(nombres);
+
+var nombres2 = ["Sofia", "Diego" , "Valeria", "Jorge", "Lucia", "Miguel", "Isabella", "Sebastian", "Camila", "Daniel"];
+console.log(nombres2);
+nombres2.splice(3);
+console.log(nombres2);
+nombres2.push("Fernando");
+console.log(nombres2);
+
+nombres2.splice(2, 1);
+console.log(nombres2);
+
+
+const arrayNums = [1,2,3,4,5,6,7,8,9,10];
+const arrayNums2 = [11,12,13,14,15,16,17,18,19,20];
+
+console.log("-----------------------SPREAD OPERATOR---------------------------");
+
+console.log("Array 1:" + " " + arrayNums);
+console.log("Array 2:" + " " + arrayNums2);
+
+const arrayNumsTotal = [...arrayNums, ...arrayNums2];
+console.log("Array Total:" + " " + arrayNumsTotal);
+
+let array1 = [5,12,8,130,44];
+
+let resA1 = array1.find( element => element > 10 );
+let resA2 = array1.includes(8);
+let resA3 = array1.findIndex( el => el == 44);
+let resA4 = array1.some( element => element % 2 === 0);
+let resA5 = array1.some( elemento => elemento % 2 >= 1000 );
+
+console.log("primer elemento encontrado" + " " + resA1);
+console.log("segundo cp encontrado" + " " + resA2);
+console.log("indice del elemento encontrado" + " " + resA3);
+console.log(resA4);
+console.log(resA5);
+
+let map1 = array1.map( el => el * 2);
+console.log("elementos multiplicados" + " " + map1);
+
+let words = ['cp','map','memamanlasdekince','ugoesgay','cepecepecep','elalexanderesgai'];
+let resW1 = words.filter( word => word.length > 6);
+console.log("palabras filtradas" + " " + resW1);
+
+
+let objetoUsuario = {
+    "username" : "cplio",
+    "score" : 67,
+    "hours" : 167
+};
+
+console.log(objetoUsuario);
+
+objetoUsuario.profesional = false;
+console.log(objetoUsuario);
+console.log(objetoUsuario.username);
+
+class Usuario {
+
+    constructor(username,score,hours,profesional){
+        this.username = username;
+        this.score = score;
+        this.hours = hours;
+        this.profesional = profesional;
+    }
+
+    getName(){
+        return this.username;
+    }
+    setName(){
+        this.username = nombres;
+    }
+}
+
+let objetoUsuario2 = new Usuario(
+    "Ricardo",
+    67,
+    280,
+    true
+);
+
+console.log(objetoUsuario2);
+console.log(objetoUsuario2.username);
+objetoUsuario2.setName("Miguel");
+
+objetoUsuario2.username = "Miguel";
+console.log(objetoUsuario2.username + " " + objetoUsuario2.username + " " + "agarra mi chile y juega con el");
+
+let inventario = [
+    { name: "Manzanas", cantidad: 10 },
+    { name: "Peras", cantidad: 50 },
+    { name: "Uvas", cantidad: 40 },
+    { name: "Naranjas", cantidad: 67 },
+];
+
+let resultadoInventario = inventario.find(
+    el => el.name == "Manzanas"
+);
+console.log(resultadoInventario);
+
+let resultadoInventario2 = inventario.find(
+    ({name}) => name == "Peras"
+);
+console.log(resultadoInventario2);
+
+let resultadoInventario3 = inventario.find(
+    ({cantidad}) => cantidad > 5
+);
+console.log(resultadoInventario3);
