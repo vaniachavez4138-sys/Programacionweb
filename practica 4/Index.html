@@ -1,0 +1,182 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form>
+        <fieldset><!-- Esta etiqueta te ayuda a dividir por secciones -->
+            <legend>Formulario de Identificacion</legend><!-- Titulo o encabezado del formulario -->
+        </fieldset>
+        <label>
+            Nombre:
+        </label>
+        <input type="text"  placeholder="Juanito Cristobal" id="NombreUsuario" name="Nombre"><!-- EL ID ES IMPORTATE PARA IDENTIFICAR CADA INPUT PARA JAVASCRIPT -->
+       
+        <label>
+            Correo Electronico:
+        </label>
+        <input type="email" name="Email" id="Email" placeholder="@gmail.com">
+       
+        <label>
+            Fecha de Nacimiento
+        </label>
+        <input type="date" id="Fecha de Nacimiento" name="Fecha de Nacimiento">
+       
+        <label>
+            Contraseña:
+        </label>
+       <input type="password" id="Contraseña" name="Contraseña">
+
+       
+       <fieldset>
+            <legend>Rangos</legend>
+
+            <label>Rango de interes</label>
+            <input type="range" name="interes" id="interes" min="0" max="100" value="10">
+
+            <label>Color</label>
+            <input type="color" name="color" id="color">
+        </fieldset>
+        </form>
+       
+       
+       
+        <input type="submit" value="Enviar" id="EnviaNombre" name="EnviaNombre" style="background-color: rgb(0, 255, 17);"><!-- Value hace valido lo que envies al servidor -->
+
+        <fieldset><!-- Divide por secciones con recuadros -->
+            <legend>Selecciona Animales</legend>
+            <label>
+                Perro
+            </label>
+            <input type="radio" id="Perro" name="Animal" value="Perro">
+            <br>
+            <label>
+                Gato
+            </label>
+            <input type="radio" id="Gato" name="Animal" value="Gato">
+            <br>
+            <label>
+                Cangrejo
+            </label>
+            <input type="radio" id="Cangrejo" name="Animal" value="Cangrejo">
+            <br>
+            <label>
+                Pez
+            </label>
+            <input type="radio" id="Pez" name="Animal" value="Pez">
+        </fieldset>
+
+        <fieldset>
+            <legend>Seleciona un Videojuego</legend>
+             <label>
+                Roblox
+            </label>
+            <input type="checkbox" id="Roblox" name="Videojuego" value="Roblox">
+            <br>
+            <label>
+                Fifa
+            </label>
+            <input type="checkbox" id="Fifa" name="Videojuego" value="Fifa">
+            <br>
+            <label>
+                Fornite
+            </label>
+            <input type="checkbox" id="Fornite" name="Videojuego" value="Fornite">
+            <br>
+            <label>
+                GTA
+            </label>
+            <input type="checkbox" id="GTA" name="Videojuego" value="GTA">
+        </fieldset>
+        <fieldset>
+            <legend>Rangos</legend>
+                <label>
+                    Que tan nazi te consideras
+                </label>
+                <input name="Interes" id="Interes" type="range" min="0" max="100" value="0"><!-- OJO ASI SE HACE UNA BARRA DE RANGOS -->
+                <input name="color" id="color" type="color" >
+        
+       </fieldset>
+      </form>
+        <form>
+        <fieldset>
+            <legend>Animales</legend>
+            <select><!-- Lista de opciones para animales -->
+                <option value="1" name="Animales" id="selectdeanimales">Gato</option>
+                <option value="2" name="Animales" id="selectdeanimales">Perro</option>
+                <option value="3" name="Animales" id="selectdeanimales">Pato</option>
+                <option value="4" name="Animales" id="selectdeanimales">Pez</option>
+                
+                <optgroup>
+                    <option value="5" name="php" > php</option>option>
+                    <option value="6" name="css" id="selectdeanimales">Tortuga</option>
+                    <option value="7" name="Javascript" id="selectdeanimales">Loro</option>
+                </optgroup>
+            </select>
+
+        </fieldset>
+
+        <fieldset>  
+            <legend>Ciudades
+
+            </legend>
+              <label>
+                Selecciona tu ciudad de Jalisco </label>
+                <imput type="search" name ="Ciudad" List="Ciudad">
+
+                    <details id="Ciudades">
+                        <option value="Guadalajara" name="Ciudad" id="Ciudad">Guadalajara</option>
+                        <option value="Zapopan" name="Ciudad" id="Ciudad">Zapopan</option>
+                        <option value="Tlaquepaque" name="Ciudad" id="Ciudad">Tlaquepaque</option>
+                        <option value="Tonala" name="Ciudad" id="Ciudad">Tonala</option>
+
+                        </details>
+                        <br/>
+                        <label> Barras de progreso </Label>
+                            <progress max="100"> </progress>
+                            <br/>
+                            <textarea name="textarea id=textarea" cols="20" rows="10"></textarea>
+                            Texto pre incluido en text area
+                            </textarea>
+                            <input type="text " placeholder=" Agregar nommbre" name="Nombre de NombreUsuario"> 
+                            <input type="email" placeholder="@gmail.com" name="Email" required> 
+                        </input>
+                        </fieldset>
+
+        <button type="submit">Envia formulario</button>
+
+
+
+
+</form>
+    <form oninput="Multiplicacion()">
+        <fieldset>
+            <legend>Selecciona un pais</legend>
+            <label for="pais">Pais</label>
+           <legend> Formulario Dinamico </legend>
+            <input type="number" id="Numero 1">
+            <input type="number" id="Numero 2"> =
+            <output id="resultado" for="Numero 1 Numero2">
+</form>
+
+    <script> function Multiplicacion()(
+             var Primernumero = document.getElementById("Numero 1").value;
+             //console.log(Primernumero);
+             var Segundonumero = document.getElementById("Numero 2").value;
+             //console.log(Segundonumero);
+                var Resultado = parseFloat(Primernumero) * parseFloat(Segundonumero);
+                console.log(Resultado);
+
+                
+                document.getElementById("resultado").value = Resultado;
+
+    )
+    
+    </script>
+
+
+</body>
+</html>
